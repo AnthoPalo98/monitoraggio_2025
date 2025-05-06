@@ -1,0 +1,20 @@
+install.packages(terra)
+library(terra)
+
+# Importing data
+setwd("/desktop/")
+
+# Windows:
+setwd("C://utente/Desktop/") # caution !!!
+
+mato=rast("D")
+plot(mato)
+
+# Bands
+# band 1 = infrared
+# band 2 = red
+# band 3 = green
+
+ploRGB (mato,r =2,g=3,b=1)
+ploRGB (mato,r =2,g=1,b=3)
+ploRGB (mato,r =1,g=2,b=3)
